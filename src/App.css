@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body{
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.love_img img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stylish_heading{
+  margin-top: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+.stylish_heading p{
+  font-size: 2.5vw;
+}
+.text_size{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.abc {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+  animation: slidermover 15s infinite;
+
+}
+.slider_img{
+  width: 20%;
+  height: auto;
+}
+@keyframes slidermover {
+  0% {
+      left: 0%;
+  }
+
+  20% {
+      margin-left: -20%;
+  }
+  40%{
+      margin-left: -40%;
+  }
+  60%{
+      margin-left: -60%;
+  }
+  80%{
+      margin-left: -80%;
+  }
+  100%{
+      margin-left:0%;
+  }
+}
+.shoe_prdct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px gray;
+  margin-bottom: 10px;
+
+}
+.shoe_heading{
+  margin-top: 10px;
+  color: #bc0000;
+}
+.img1_col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1{
+  width: 40%;
+  height: auto;
+}
+.view_btn{
   color: white;
+  background-color: #ee1c25;
+  border: none;
+  width: 35%;
+  height: 35px;
+  border-radius: 10px 10px;
+  margin-bottom: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.view_btn:hover{
+  border: none;
+  color: white;
+  background-color: #a50b00;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner_img:hover{
+  transition-duration: 1s;
+  opacity: 0.7;
 }
